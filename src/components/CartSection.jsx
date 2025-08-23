@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const CartSection = () => {
   const { cart, setCart } = useCart();
-  const {logout} = useAuth();
-  const navigate = useNavigate()
+  const { logout, token } = useAuth();
+  const navigate = useNavigate();
 
   const removeItem = (id) => {
     setCart(cart.filter((item) => item.id !== id));
@@ -25,12 +25,13 @@ const CartSection = () => {
       setCart([]); // clear cart after success
     },
     onError: (error) => {
-       if (error.response?.status === 401) {
+      if (error.response?.status === 401) {
         alert("Session expired, please login again.");
         logout(); // clear token
         navigate("/login"); // ✅ redirect to login
       } else {
-        alert("Failed to place order: " + error.message)}
+        alert("Failed to place order: " + error.message);
+      }
     },
   });
 
@@ -93,9 +94,13 @@ const CartSection = () => {
         <button
           className="btn btn-primary w-full mt-4"
           onClick={handleCheckout}
-          disabled={checkoutMutation.isLoading}
+          disabled={checkoutMutation.isLoading || !token}
         >
-          {checkoutMutation.isLoading ? "Processing..." : "Checkout"}
+          {token
+            ? checkoutMutation.isLoading
+              ? "Processing..."
+              : "Checkout"
+            : "Need Login to Checkout"}
         </button>
       )}
     </div>

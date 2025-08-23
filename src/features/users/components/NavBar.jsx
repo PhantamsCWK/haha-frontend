@@ -2,13 +2,13 @@
 
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { useAuth } from "../../../hooks"
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { FaHistory } from "react-icons/fa";
 
 const NavBar = () => {
 //   const isMobile = useMediaQuery("(max-width: 768px)");
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
   const { token, user, logout } = useAuth()
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -36,7 +36,7 @@ const NavBar = () => {
             <div>
                 {
                     token ? <CiLogout size={25} onClick={()=> logout()}/>
-                    : <CiLogin size={25} onClick={navigate('/login')}/>
+                    : <Link to={'/login'}><CiLogin size={25} /></Link>
                 }
             </div>
         </button>
