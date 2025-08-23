@@ -20,7 +20,7 @@ const RegisterForm = () => {
     }});
     
     const { mutate, isPending } = useMutation({
-      mutationFn: async (newUser) => await publicApi.post("/add-user", newUser),
+      mutationFn: async (newUser) => await publicApi.post("/register", newUser),
       onSuccess: () => {
         queryClient.invalidateQueries(["users"]);
         navigate("/login")
