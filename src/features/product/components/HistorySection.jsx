@@ -11,7 +11,7 @@ const HistorySection = () => {
 //   const queryClient = useQueryClient();
 
   const { data, isPending, isError, error } = useQuery({
-    queryKey: ['products'],
+    queryKey: ['history'],
     queryFn: async () => await privateApi.get("orders/my-history")
   })
 
