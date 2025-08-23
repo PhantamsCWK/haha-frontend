@@ -1,12 +1,30 @@
-# React + Vite
+# 🚀 Test App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React 19 + Vite application using **TailwindCSS**, **DaisyUI**, **TanStack Query**, and more.  
+This project is set up for building a modern frontend with API integration, forms, and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React 19** – UI library  
+- ⚡ **Vite 7** – Fast dev server & bundler  
+- 🎨 **TailwindCSS 4** + **DaisyUI** – Styling & components  
+- 🔄 **@tanstack/react-query** – Data fetching & caching  
+- 📡 **Axios** – API requests  
+- 📝 **React Hook Form** – Form handling & validation  
+- 🎛️ **React Router DOM 7** – Client-side routing  
+- 📊 **Recharts** – Charting library  
+- 🎨 **React Icons** – Icon library  
+- 💫 **React Spinners** – Loading states  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Installation & Setup
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/your-username/test-app.git
+cd test-app
+npm install
