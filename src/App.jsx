@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <Suspense fallback={<Loading />}>
-      <BrowserRouter>
+      <BrowserRouter basename='/haha-frontend'>
         <Routes>
           <Route element={<MainLayout />}>
             <Route path='/' element={<Home />} />
