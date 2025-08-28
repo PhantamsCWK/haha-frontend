@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const BASE_URL = "http://127.0.0.1:8000"
+
 export const publicApi = axios.create({
-  baseURL: "https://fa0dbb7decb6.ngrok-free.app/api",
+  baseURL: "http://127.0.0.1:8000/api",
   headers: { 
     "Content-Type": "application/json",
     "ngrok-skip-browser-warning": "true" // ✅ correct header
@@ -9,7 +11,7 @@ export const publicApi = axios.create({
 });
 
 export const privateApi = axios.create({
-  baseURL: "https://fa0dbb7decb6.ngrok-free.app/api",
+  baseURL: "http://127.0.0.1:8000/api",
   headers: { 
     "Content-Type": "application/json",
     "ngrok-skip-browser-warning": "true" // ✅ correct header
