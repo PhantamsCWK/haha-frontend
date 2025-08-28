@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss()
   ],
   // 👇 IMPORTANT: must match your repo name
-  base: '/haha-frontend/',
+  base: '/haha-frontend',
 })
