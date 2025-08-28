@@ -1,1 +1,0 @@
-import{j as t,O as s}from"./index-TzHnXw__.js";import{N as r,F as o}from"./NavBar-9gvb05P4.js";import"./index-oTxUbyLe.js";import"./index-DZBanOBh.js";import"./iconBase-DNB978J7.js";import"./index-BF8_jTQB.js";const j=()=>t.jsxs("section",{className:"flex flex-col justify-start items-center pt-[4px] mx-2",children:[t.jsx(r,{}),t.jsx(s,{}),t.jsx(o,{})]});export{j as default};
