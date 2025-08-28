@@ -37,7 +37,7 @@ const RegisterForm = () => {
     const [isPasswordConfirmVisible, setIsPasswordConfirmVisible] = useState(false);
 
     const onSubmit = async (data) => {
-      mutate({ email: data.email, username: data.username, password: data.password }).unwrap()
+      mutate({ email: data.email, name: data.username, password: data.password })
     }
 
     return (

@@ -8,4 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  // 👇 IMPORTANT: must match your repo name
+  base: '/haha-frontend/',
 })

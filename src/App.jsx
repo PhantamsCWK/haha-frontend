@@ -44,7 +44,7 @@ const App = () => {
             <Route path='admin' element={<Admin />}/>
             <Route path='product/:id' element={<Product />}/>
           </Route>
-          <Route path='*' element={<Error />}/>
+          {/* <Route path='*' element={<Error />}/> */}
         </Routes>
       </BrowserRouter>
     </Suspense>

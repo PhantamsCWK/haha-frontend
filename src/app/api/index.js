@@ -1,13 +1,19 @@
 import axios from "axios";
 
 export const publicApi = axios.create({
-  baseURL: "http://192.168.35.221:1234/api",
-  headers: { "Content-Type": "application/json" },
+  baseURL: "https://fa0dbb7decb6.ngrok-free.app/api",
+  headers: { 
+    "Content-Type": "application/json",
+    "ngrok-skip-browser-warning": "true" // ✅ correct header
+  }
 });
 
 export const privateApi = axios.create({
-  baseURL: "http://192.168.35.221:1234/api",
-  headers: { "Content-Type": "application/json" },
+  baseURL: "https://fa0dbb7decb6.ngrok-free.app/api",
+  headers: { 
+    "Content-Type": "application/json",
+    "ngrok-skip-browser-warning": "true" // ✅ correct header
+  }
 });
 
 privateApi.interceptors.request.use((config) => {
@@ -17,4 +23,3 @@ privateApi.interceptors.request.use((config) => {
   }
   return config;
 });
-
