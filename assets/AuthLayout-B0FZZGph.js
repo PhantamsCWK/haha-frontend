@@ -1,0 +1,1 @@
+import{j as t,O as e}from"./index-TzHnXw__.js";const s=()=>t.jsx("div",{className:" flex justify-center items-center h-[100vh] bg-gradient-to-tr from-[#570DF8] to-white",children:t.jsx(e,{})});export{s as default};
