@@ -1,0 +1,1 @@
+import{j as r,O as s}from"./index-OMCVZtP_.js";import{N as t,F as o}from"./NavBar-CqNg1K0j.js";import"./index-oTxUbyLe.js";import"./index-CBgKc9e3.js";import"./iconBase-BGILQRT3.js";import"./index-BBjRdsrt.js";const x=()=>r.jsxs(r.Fragment,{children:[r.jsx(t,{}),r.jsxs("div",{className:"h-full w-screen",children:[r.jsx(s,{}),r.jsx(o,{})]})]});export{x as default};
